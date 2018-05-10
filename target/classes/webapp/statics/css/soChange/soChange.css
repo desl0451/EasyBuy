@@ -1,0 +1,21 @@
+.eachBox {
+    overflow: hidden;
+    clear: both;
+    padding: 15px 0;
+}
+
+/* changeBox_a1 */
+.changeBox_a1 {
+    float: left;
+    width: 510px;
+    height: 300px;
+    padding: 2px;
+    position: relative;
+}
+
+.changeBox_a1 .a_bigImg {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: none;
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/jquery.soChange-min.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- 1 -->
+<div class="eachBox">
+    <div class="changeBox_a1" id="change_1">
+        <a href="#1" class="a_bigImg"><img src="images/1.jpg" width="650" height="250" alt="" /></a>
+        <a href="#2" class="a_bigImg"><img src="images/2.jpg" width="650" height="250" alt="" /></a>
+        <a href="#3" class="a_bigImg"><img src="images/3.jpg" width="650" height="250" alt="" /></a>
+        <a href="#4" class="a_bigImg"><img src="images/4.jpg" width="650" height="250" alt="" /></a>
+    </div>
+    <div class="introArea">
+        <h2>1- 默认最简易模式</h2>
+        <p class="p_code"><code>$('#change_1 .a_bigImg').soChange();</code></p>
+        <p class="green">
+            //最简易模式不带任何参数，即直接切换选择器选择的对象组，所有参数为默认：隔5秒自动切换，图片过渡效果持续1秒 <br /> <br />
+            //源对象为自动切换的一个数组，即其本身，非其父包装元素 <br />
+            //如要切换图片本身就以图片组为对象，<br />
+            //如要切换层就以层组为对象</p>
+    </div>
+</div>
+
+
+<!-- 2 -->
+<div class="eachBox">
+    <div class="changeBox_a1" id="change_2">
+        <a href="#1" class="a_bigImg"><img src="images/1.jpg" width="650" height="250" alt="" /></a>
+        <a href="#2" class="a_bigImg"><img src="images/2.jpg" width="650" height="250" alt="" /></a>
+        <a href="#3" class="a_bigImg"><img src="images/3.jpg" width="650" height="250" alt="" /></a>
+        <a href="#4" class="a_bigImg"><img src="images/4.jpg" width="650" height="250" alt="" /></a>
+        <a href="#" class="a_last" title="上一个">上一个</a><a href="#" class="a_next" title="下一个">下一个</a>
+    </div>
+    <div class="introArea">
+        <h2>2- 带前后按钮</h2>
+        <p class="p_code">
+            <code>$('#change_2 .a_bigImg').soChange({<br />
+                btnPrev:'#change_2 .a_last', <span class="green">// 按钮，上一个</span> <br />
+                btnNext:'#change_2 .a_next' <span class="green">// 按钮，下一个</span> <br />
+                });</code></p>
+
+    </div>
+</div>
+
+<!-- 3 -->
+
+<div class="eachBox">
+    <div class="changeBox_a1" id="change_3">
+        <a href="#1" class="a_bigImg"><img src="images/1.jpg" width="650" height="250" alt="" /></a>
+        <a href="#2" class="a_bigImg"><img src="images/2.jpg" width="650" height="250" alt="" /></a>
+        <a href="#3" class="a_bigImg"><img src="images/3.jpg" width="650" height="250" alt="" /></a>
+        <a href="#4" class="a_bigImg"><img src="images/4.jpg" width="650" height="250" alt="" /></a>
+
+        <ul class="ul_change_a2">
+            <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+        </ul>
+    </div>
+    <div class="introArea">
+        <h2>3- 使用数字导航切换及自定义当前状态数字的class</h2>
+        <p class="p_code">
+            <code>$('#change_3 .a_bigImg').soChange({<br />
+                thumbObj:'#change_3 .ul_change_a2 span', <br /><span class="green">//导航为数字形式，选择器指向包含数字的span对象</span> <br />
+                thumbNowClass:'on', <br /><span class="green">//自定义导航对象当前class为on</span> <br />
+                changeTime:4000<span class="green">//自定义切换时间为4000ms</span> <br />
+                });</code></p>
+
+
+    </div>
+</div>
+
+<!-- 32 -->
+
+<div class="eachBox">
+    <div class="changeBox_a1" id="change_32">
+        <a href="#1" class="a_bigImg"><img src="images/1.jpg" width="650" height="250" alt="" /></a>
+        <a href="#2" class="a_bigImg"><img src="images/2.jpg" width="650" height="250" alt="" /></a>
+        <a href="#3" class="a_bigImg"><img src="images/3.jpg" width="650" height="250" alt="" /></a>
+        <a href="#4" class="a_bigImg"><img src="images/4.jpg" width="650" height="250" alt="" /></a>
+
+        <ul class="ul_change_a2">
+            <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+        </ul>
+    </div>
+    <div class="introArea">
+        <h2>3- 定义对象切换方式为slide</h2>
+        <p class="p_code">
+            <code>$('#change_32 .a_bigImg').soChange({<br />
+                thumbObj:'#change_32 .ul_change_a2 span', <br /><span class="green">//导航为数字形式，选择器指向包含数字的span对象</span> <br />
+                thumbNowClass:'on', <br /><span class="green">//自定义导航对象当前class为on</span> <br />
+                changeTime:4000<span class="green">//自定义切换时间为4000ms</span> <br />
+                });</code></p>
+
+
+    </div>
+</div>
+
+
+
+<!-- 33 -->
+
+<div class="eachBox">
+    <div class="changeBox_a1" id="change_33">
+        <div class="changeDiv">
+            <h3><a href="#">图片111111111说明文字，文字标题都绝对定位在div.changeDiv这个层内</a></h3>
+            <a href="#1"><img src="images/1.jpg" width="650" height="250" alt="" /></a></div>
+        <div class="changeDiv">
+            <h3><a href="#">图片222222222说明文字，文字标题都绝对定位在div.changeDiv这个层内</a></h3>
+            <a href="#2"><img src="images/2.jpg" width="650" height="250" alt="" /></a></div>
+        <div class="changeDiv">
+            <h3><a href="#">图片333333333说明文字，文字标题都绝对定位在div.changeDiv这个层内</a></h3>
+            <a href="#3"><img src="images/3.jpg" width="650" height="250" alt="" /></a></div>
+        <div  class="changeDiv">
+            <h3><a href="#">图片444444444说明文字，文字标题都绝对定位在div.changeDiv这个层内</a></h3>
+            <a href="#4"><img src="images/4.jpg" width="650" height="250" alt="" /></a></div>
+
+        <ul class="ul_change_a2">
+            <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+        </ul>
+    </div>
+    <div class="introArea">
+        <h2>4- 切换对象为其他，这里为包含图片和标题的层</h2>
+        <p class="p_code">
+            <code>$('#change_33 div.changeDiv').soChange({<br /><span class="green">对象指向层，层内包含图片及标题</span><br />
+                thumbObj:'#change_33 .ul_change_a2 span', <br />
+                thumbNowClass:'on'<br />
+                });</code></p>
+
+
+
+    </div>
+</div>
+
+
+<!-- 33 -->
+
+<div class="eachBox">
+    <div class="changeBox_a1" id="change_34">
+        <a href="#1" class="a_bigImg"><img src="images/1.jpg" width="650" height="250" alt="" /></a>
+        <a href="#2" class="a_bigImg"><img src="images/2.jpg" width="650" height="250" alt="" /></a>
+        <a href="#3" class="a_bigImg"><img src="images/3.jpg" width="650" height="250" alt="" /></a>
+        <a href="#4" class="a_bigImg"><img src="images/4.jpg" width="650" height="250" alt="" /></a>
+
+        <ul class="ul_change_a2">
+            <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+        </ul>
+    </div>
+    <div class="introArea">
+        <h2>5- 关闭鼠标经过thumbObj切换事件，平滑过渡间歇时间为0</h2>
+        <p class="p_code">
+            <code>$('#change_34 .a_bigImg').soChange({<br />
+                thumbObj:'#change_34 .ul_change_a2 span',<br />
+                thumbOverEvent:false,<span class="green">// 关闭鼠标经过thumbObj切换事件，只有点击thumbObj时才切换对象</span><br />
+                thumbNowClass:'on', <br />
+                slideTime:0<span class="green">//平滑过渡间歇为0，意味着直接切换</span> <br />
+                });</code></p>
+
+    </div>
+</div>
+
+
+
+<!-- 4 -->
+<div class="eachBox">
+    <div class="changeBox_a1" id="change_4">
+        <a href="#1" class="a_bigImg"><img src="images/1.jpg" width="650" height="250" alt="" /></a>
+        <a href="#2" class="a_bigImg"><img src="images/2.jpg" width="650" height="250" alt="" /></a>
+        <a href="#3" class="a_bigImg"><img src="images/3.jpg" width="650" height="250" alt="" /></a>
+        <a href="#4" class="a_bigImg"><img src="images/4.jpg" width="650" height="250" alt="" /></a>
+
+        <a href="#" class="a_last" title="上一个">上一个</a><a href="#" class="a_next" title="下一个">下一个</a>
+
+        <ul class="ul_change_a1">
+            <li><a href="#"><img src="images/1.jpg" width="67" height="40" alt="" /></a></li>
+            <li><a href="#"><img src="images/2.jpg" width="67" height="40" alt="" /></a></li>
+            <li><a href="#"><img src="images/3.jpg" width="67" height="40" alt="" /></a></li>
+            <li><a href="#"><img src="images/4.jpg" width="67" height="40" alt="" /></a></li>
+        </ul>
+    </div>
+    <div class="introArea">
+
+        <h2>6- 带导航图标及按钮</h2>
+        <p class="p_code">
+            <code>$('#change_4 .a_bigImg').soChange({<br />
+                thumbObj:'#change_4 .ul_change_a1 img', <br /><span class="green">//导航图标，选择器直接指向图标对象</span> <br />
+                btnPrev:'#change_4 .a_last', <br />
+                btnNext:'#change_4 .a_next'<br />
+                });</code></p>
+
+
+    </div>
+</div>
+
+
+
+<!-- 5 -->
+<div class="eachBox">
+    <div class="changeBox_a1" id="change_5">
+        <a href="#1" class="a_bigImg"><img src="images/1.jpg" width="650" height="250" alt="" /></a>
+        <a href="#2" class="a_bigImg"><img src="images/2.jpg" width="650" height="250" alt="" /></a>
+        <a href="#3" class="a_bigImg"><img src="images/3.jpg" width="650" height="250" alt="" /></a>
+        <a href="#4" class="a_bigImg"><img src="images/4.jpg" width="650" height="250" alt="" /></a>
+
+        <a href="#" class="a_last" title="上一个">上一个</a><a href="#" class="a_next" title="下一个">下一个</a>
+
+        <ul class="ul_change_a1">
+            <li><a href="#"><img src="images/1.jpg" width="67" height="40" alt="" /></a></li>
+            <li><a href="#"><img src="images/2.jpg" width="67" height="40" alt="" /></a></li>
+            <li><a href="#"><img src="images/3.jpg" width="67" height="40" alt="" /></a></li>
+            <li><a href="#"><img src="images/4.jpg" width="67" height="40" alt="" /></a></li>
+        </ul>
+    </div>
+    <div class="introArea">
+
+        <h2>7- 不自动切换，并返回事件</h2>
+        <p class="p_code">
+            <code>$('#change_5 .a_bigImg').soChange({<br />
+                thumbObj:'#change_5 .ul_change_a1 img', <br /><span class="green">//导航图标，选择器直接指向图标对象</span><br />
+                btnPrev:'#change_5 .a_last', <br />
+                btnNext:'#change_5 .a_next', <br />
+                autoChange:false<span class="green"> //自动切换为 false，默认为true </span> <br />
+                callback:function(prev,now){<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;alert('上一张图片index值：'+prev+'，当前图片index值：'+now);<br />
+                }<span class="green"> //返回事件 </span> <br />
+                });</code></p>
+
+
+
+    </div>
+</div>
+
+<!-- 6 -->
+<div class="eachBox">
+    <div class="changeBox_b1" id="change_6">
+        <h3><a href="#">标题1</a></h3>
+        <div>内容1111111 11111内容111111 111111内容11111 1111111内容1111111 11111</div>
+        <h3><a href="#">标题2</a></h3>
+        <div>内容2222222 22222内容222222 222222内容22222 2222222内容2222222 22222</div>
+        <h3><a href="#">标题3</a></h3>
+        <div>内容3333333 33333内容333333 333333内容33333 3333333内容3333333 33333</div>
+        <h3><a href="#">标题4</a></h3>
+        <div>内容4444444 44444内容444444 444444内容44444 4444444内容4444444 44444</div>
+
+    </div>
+    <div class="introArea">
+
+        <h2>8- 在选项卡上的应用</h2>
+        <p class="p_code">
+            <code>$('#change_6 div').soChange({<br />
+                thumbObj:'#change_6 h3',<span class="green">//导航对象指向标题h3</span><br />
+                slideTime:0,<br />
+                thumbOverEvent:false,<span class="green">//关闭鼠标经过切换的动作</span><br />
+                autoChange:false<br />
+                });</code></p>
+
+        <p><b>注：</b>这个和相册或者幻灯似乎相差比较远，但是其实原理相同，无非是鼠标触发一个，另一个发生改变，所以，应用时请开动脑筋，充分发挥css在页面特效中的作用</p>
+
+    </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+    $(function () {
+//源对象为自动切换的一个数组，即其本身，非其父包装元素
+//如要切换图片本身就以图片组为对象，
+//如要切换层就以层组为对象
+
+//默认最简易模式
+        $('#change_1 .a_bigImg').soChange();
+
+//带前后按钮
+        $('#change_2 .a_bigImg').soChange({
+            btnPrev:'#change_2 .a_last',//按钮，上一个
+            btnNext:'#change_2 .a_next'//按钮，下一个
+        });
+
+//数字导航切换及自定义当前数字的class
+        $('#change_3 .a_bigImg').soChange({
+            thumbObj:'#change_3 .ul_change_a2 span',
+            thumbNowClass:'on',//自定义导航对象当前class为on
+            changeTime:4000//自定义切换时间为4000ms
+
+        });
+
+//定义对象切换方式为slide
+        $('#change_32 .a_bigImg').soChange({
+            thumbObj:'#change_32 .ul_change_a2 span',
+            thumbNowClass:'on',//自定义导航对象当前class为on
+            changeType:'slide',//定义对象切换方式为slide
+            startIndex:2,
+            changeTime:4000//自定义切换时间为4000ms
+        });
+
+//切换对象为其他，这里为包含图片和标题的层
+        $('#change_33 div.changeDiv').soChange({//对象指向层，层内包含图片及标题
+            thumbObj:'#change_33 .ul_change_a2 span',
+            thumbNowClass:'on'//自定义导航对象当前class为on
+        });
+
+//平滑过渡间歇时间为0
+        $('#change_34 .a_bigImg').soChange({
+            thumbObj:'#change_34 .ul_change_a2 span',
+            thumbNowClass:'on',
+            thumbOverEvent:false,
+            slideTime:0//平滑过渡间歇为0，意味着直接切换
+        });
+
+
+
+
+//带导航图标及按钮
+        $('#change_4 .a_bigImg').soChange({
+            thumbObj:'#change_4 .ul_change_a1 img',//导航图标
+            btnPrev:'#change_4 .a_last',
+            btnNext:'#change_4 .a_next'
+        });
+
+
+//不自动切换
+        $('#change_5 .a_bigImg').soChange({
+            thumbObj:'#change_5 .ul_change_a1 img',
+            btnPrev:'#change_5 .a_last',
+            btnNext:'#change_5 .a_next',
+            autoChange:false,//自动切换为 false，默认为true
+            callback:function(prev,now){
+                alert('上一张图片index值：'+prev+'，当前图片index值：'+now);
+            }
+        });
+
+
+//在选项卡上的运用
+        $('#change_6 div').soChange({
+            thumbObj:'#change_6 h3',
+            slideTime:0,
+            thumbOverEvent:false,
+            autoChange:false//自动切换为 false，默认为true
+        });
+
+
+    });
+
+</script>
+
+</body>
+</html>
