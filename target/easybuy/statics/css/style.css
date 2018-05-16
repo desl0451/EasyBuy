@@ -2813,7 +2813,7 @@ ul.menu_r li a:hover, ul.menu_r li a.now {
 }
 
 .banner {
-    width: 510px;
+    width: 480px;
     height: 500px;
     overflow: hidden;
     float:left;
@@ -2823,7 +2823,7 @@ ul.menu_r li a:hover, ul.menu_r li a.now {
 }
 
 .banner .top_slide_wrap {
-    width: 510px;
+    width: 480px;
     height: 230px;
     overflow: hidden;
     position: relative;
@@ -2986,41 +2986,7 @@ ul.menu_r li a:hover, ul.menu_r li a.now {
     background: url(../images/b_h.png) no-repeat center top;
 }
 
-/*设置天猫条*/
-.tmall {
-    position: relative;
-    width: 510px;
-    height: 300px;
-    margin-top: 1px;
-    overflow: hidden;
-}
-.tmall-hd {
-    font-size: 14px;
-    padding-top: 11px;
-    border-bottom: 3px solid #ff1648;
-    position: relative;
-    background-color: #f1f1f1;
-}
 
-.tmall-hd .inner {
-    height: 18px;
-    line-height: 18px;
-    position: relative;
-}
-.tmall-hd .hd-bg {
-    width: 136px;
-    position: absolute;
-    height: 19px;
-    background-repeat: no-repeat;
-    background-position: 2px 0;
-    background-size: 122px 22px;
-}
-.tmall-hd em {
-    font-size: 12px;
-    color: #666;
-    position: relative;
-    margin-left: 136px;
-}
 /*.ban_bg{
 	width:850px; height:430px; overflow:hidden; background-color:#FFF; float:left; -webkit-box-shadow:0 0 5px #e0e0e0; -moz-box-shadow:0 0 5px #e0e0e0; box-shadow:0 0 5px #e0e0e0;
 }
@@ -3039,58 +3005,11 @@ ul.menu_r li a:hover, ul.menu_r li a.now {
 	width:10px; height:10px; line-height:10px; overflow:hidden; float:left; text-align:center; background:url(../images/b.png) no-repeat center top;
 }
 .banner .ul_change_a2 span.on { background:url(../images/b_h.png) no-repeat center top; }*/
-/*********************************/
-/** 个人登录部分**/
-.tbh-member {
-    background-size: 290px 145px;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
 
-.J_Module {
-    min-height: 0;
-    background-color: #FFF;
-}
-.member {
-    padding: 3px 0 10px 0;
-    height: 132px;
-    padding-right: inherit;
-    text-align: center;
-    background-repeat: no-repeat;
-}
-.member-bd {
-    position: relative;
-    height: 91px;
-}
-.member-bd .avatar-wrapper {
-    display: block;
-    margin: 0 auto;
-    width: 74px;
-    height: 56px;
-}
-.member-bd .member-home {
-    display: inline-block;
-    border: 3px solid #fff;
-    -webkit-border-radius: 50%;
-    -webkit-background-clip: padding-box;
-    -moz-border-radius: 50%;
-    -moz-background-clip: padding;
-    border-radius: 50%;
-    background-clip: padding-box;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    overflow: hidden;
-}
-.member-bd .member-nick-info {
-    display: block;
-    line-height: 17px;
-    height: 17px;
-}
 
 /**********************************/
 .inews {
-    width: 225px;
+    width: 290px;
     height: 399px;
     background-color: #FFF;
     border: 1px solid #d9d9d9;
@@ -4628,7 +4547,6 @@ ul.menu_r li a:hover, ul.menu_r li a.now {
     min-width: 1000px;
     height: 840px;
     overflow: hidden;
-    background-color: #fff4ef;
 }
 
 .login {
@@ -4638,7 +4556,7 @@ ul.menu_r li a:hover, ul.menu_r li a.now {
 }
 
 .log_img {
-    width: 540px;
+    width: 490px;
     height: 425px;
     overflow: hidden;
     float: left;
@@ -4781,7 +4699,7 @@ ul.menu_r li a:hover, ul.menu_r li a.now {
 }
 
 .regist {
-    width: 1000px;
+    width: 980px;
     overflow: hidden;
 }
 
@@ -7916,7 +7834,7 @@ ul.pay li.checked .ch_img {
 }
 
 .b_btm {
-    width: 700px;
+    width: 900px;
     height: 122px;
     overflow: hidden;
 }
@@ -7933,9 +7851,10 @@ ul.pay li.checked .ch_img {
 }
 
 .b_nav {
-    width: 1000px;
+    width: 980px;
     overflow: hidden;
-    margin: 20px auto;
+    margin: 0px auto;
+    broder:1px solid green;
 }
 
 .b_nav dl {
@@ -7944,7 +7863,7 @@ ul.pay li.checked .ch_img {
     overflow: hidden;
     float: left;
     display: inline;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 
 .b_nav dl dt {

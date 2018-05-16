@@ -23,7 +23,7 @@
                                     <c:forEach var="second" items="${first.productCategorySecondList}">
                                         <h2>${second.productCategory.name}</h2>
                                         <c:forEach var="three" items="${second.productCategoryList}" varStatus="i">
-                                            <a href="#">${three.name}</a>
+                                            <a href="${ctx}/ProductList?action=list">${three.name}</a>
                                             <c:if test="${(i.index+1)%8==0}">
                                                 <br/>
                                             </c:if>
@@ -65,11 +65,11 @@
         <div class="banner">
             <div class="top_slide_wrap">
                 <ul class="slide_box bxslider">
-                    <li><img src="${ctx}/statics/images/index/banner/1.jpg" width="520" height="230"/></li>
-                    <li><img src="${ctx}/statics/images/index/banner/2.jpg" width="520" height="230"/></li>
-                    <li><img src="${ctx}/statics/images/index/banner/3.jpg" width="520" height="230"/></li>
-                    <li><img src="${ctx}/statics/images/index/banner/4.jpg" width="520" height="230"/></li>
-                    <li><img src="${ctx}/statics/images/index/banner/5.jpg" width="520" height="230"/></li>
+                    <li><img src="${ctx}/statics/images/index/banner/1.jpg" width="480" height="230"/></li>
+                    <li><img src="${ctx}/statics/images/index/banner/2.jpg" width="480" height="230"/></li>
+                    <li><img src="${ctx}/statics/images/index/banner/3.jpg" width="480" height="230"/></li>
+                    <li><img src="${ctx}/statics/images/index/banner/4.jpg" width="480" height="230"/></li>
+                    <li><img src="${ctx}/statics/images/index/banner/5.jpg" width="480" height="230"/></li>
                 </ul>
             </div>
             <div class="tmall">
@@ -81,10 +81,10 @@
                 </div>
                 <div class="tmall-bd" style="width: 520px; overflow: hidden; height: 300px;">
                     <div class="changeBox_a1" id="change_1">
-                        <a href="#1" class="a_bigImg"><img src="${ctx}/statics/images/index/banner/1.jpg" width="520" height="300" alt="" /></a>
-                        <a href="#2" class="a_bigImg"><img src="${ctx}/statics/images/index/banner/2.jpg" width="520" height="300" alt="" /></a>
-                        <a href="#3" class="a_bigImg"><img src="${ctx}/statics/images/index/banner/3.jpg" width="520" height="300" alt="" /></a>
-                        <a href="#4" class="a_bigImg"><img src="${ctx}/statics/images/index/banner/4.jpg" width="520" height="300" alt="" /></a>
+                        <a href="#1" class="a_bigImg"><img src="${ctx}/statics/images/index/banner/6.PNG" width="480" height="230" alt="" /></a>
+                        <a href="#2" class="a_bigImg"><img src="${ctx}/statics/images/index/banner/7.PNG" width="480" height="230" alt="" /></a>
+                        <a href="#3" class="a_bigImg"><img src="${ctx}/statics/images/index/banner/8.PNG" width="480" height="230" alt="" /></a>
+                        <a href="#4" class="a_bigImg"><img src="${ctx}/statics/images/index/banner/9.PNG" width="480" height="230" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -106,31 +106,33 @@
                 <div class="member-bd" data-spm-ab="1">
                     <div class="avatar-wrapper">
                         <a class="J_MemberHome member-home" href="javascript:;" target="_self">
-                            <img class="J_MemberAvatar member-avatar" src="//wwc.alicdn.com/avatar/getAvatar.do?userNick=&amp;width=50&amp;height=50&amp;type=sns&amp;_input_charset=UTF-8" ks_mark="y">
+                            <img class="J_MemberAvatar member-avatar" src="${ctx}/statics/images/index/register/WeiBao.jpg" width="51" height="51">
                         </a>
                     </div>
-                    <span class="member-nick-info" data-spm-anchor-id="a21bo.2017.201864.i0.5af911d9LXjiFc">
-Hi! <strong class="J_MemberNick member-nick">你好</strong>
-</span>
+                    <span class="member-nick-info">
+                        Hi! <strong class="J_MemberNick member-nick">你好</strong>
+                    </span>
                     <p class="member-tjb">
-                        <a data-spm="d3" href="//taojinbi.taobao.com/index.htm?auto_take=true" class="J_MemberPunch h">
+                        <a data-spm="d3" href="" class="J_MemberPunch h">
                             <span class="tbh-icon"></span>领淘金币抵钱
                         </a>
-                        <a class="J_MemberClub h club" href="//vip.taobao.com"><span class="tbh-icon"></span>会员俱乐部</a>
+                        <a class="J_MemberClub h club" href=""><span class="tbh-icon"></span>会员俱乐部</a>
                     </p>
                 </div>
                 <div class="member-ft">
-                    <div class="member-logout J_MemberLogout" data-spm-ab="2" data-spm-anchor-id="a21bo.2017.201864.i1.5af911d9LXjiFc">
-                        <a href="//login.taobao.com/member/login.jhtml?f=top&amp;redirectURL=http%3A%2F%2Fwww.taobao.com%2F" class="btn-login ml1 tb-bg weight" data-spm-click="gostr=/tbindex;locaid=d1;name=登录">登录</a>
-                        <a href="//reg.taobao.com/member/new_register.jhtml?from=index&amp;ex_info=&amp;ex_sign=" class="ml2 tb-bg weight" data-spm-click="gostr=/tbindex;locaid=d2;name=注册">注册</a>
-                        <a href="//openshop.taobao.com/openshop/welcome.htm" class="ml3 tb-bg weight">开店</a>
+                    <div class="member-logout J_MemberLogout">
+                        <a href="${ctx}/Login?action=toLogin" class="btn-login ml1 tb-bg weight">登录</a>
+                        <a href="${ctx}/Register?action=toRegister" class="ml2 tb-bg weight">注册</a>
+                        <a href="" class="ml3 tb-bg weight">开店</a>
                     </div>
-                    <div class="member-login J_MemberLogin" data-spm-ab="3"></div>
+                    <div class="member-login J_MemberLogin"></div>
                 </div>
             </div>
 
             </div>
-
+            <div class="tbh-tipoff">
+                <a href="http://report.12377.cn:13225/toreportinputNormal_anis.do">网上有害信息举报专区<span class="triangle"></span></a>
+            </div>
 
 
 

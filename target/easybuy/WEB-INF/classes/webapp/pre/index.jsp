@@ -26,6 +26,6 @@
 		<%--<!--限时特卖结束-->--%>
 		</div>
 	</div>
-	<%--<%@ include file="/common/pre/footer.jsp"%>--%>
+	<%@ include file="/common/pre/footer.jsp"%>
 </body>
 </html>

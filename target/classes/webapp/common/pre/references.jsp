@@ -26,7 +26,8 @@
 <!--引入jQuery-->
 <script src="${ctx}/statics/js/common/jquery-1.11.1.min.js"></script>
 <!--引入整个网页样式-->
-<link rel="stylesheet" type="text/css" href="${ctx}/statics/css/style.css">
+<link rel="stylesheet" type="text/css" href="${ctx}/statics/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="${ctx}/statics/css/index.css"/>
 <!--引入bxslider插件-->
 <script type="text/javascript" src="${ctx}/statics/js/common/soChange/jquery.soChange-min.js"></script>
 <link rel="stylesheet" type="text/css" href="${ctx}/statics/css/bxslider/jquery.bxslider.css"/>

@@ -4,7 +4,7 @@
     <div class="left_m">
         <div class="left_m_t t_bg1">订单中心</div>
         <ul>
-            <li><a href="Member_Order.html">我的订单</a></li>
+            <li><a href="MemberOrder?action=toFindOrder">我的订单</a></li>
             <li><a href="#">全部订单</a></li>
         </ul>
     </div>
